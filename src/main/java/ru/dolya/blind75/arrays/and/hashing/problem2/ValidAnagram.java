@@ -1,6 +1,5 @@
 package ru.dolya.blind75.arrays.and.hashing.problem2;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,11 +22,4 @@ public class ValidAnagram {
         return sMap.equals(tMap);
     }
 
-    public static boolean isAnagram2(String s, String t) {
-        char[] sArr = s.toCharArray();
-        char[] tArr = t.toCharArray();
-        Arrays.sort(sArr);
-        Arrays.sort(tArr);
-        return Arrays.equals(sArr, tArr);
-    }
 }
