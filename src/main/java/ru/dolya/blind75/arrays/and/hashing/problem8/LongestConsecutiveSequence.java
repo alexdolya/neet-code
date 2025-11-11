@@ -2,7 +2,7 @@ package ru.dolya.blind75.arrays.and.hashing.problem8;
 
 import java.util.*;
 
-public class Solution {
+public class LongestConsecutiveSequence {
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 20, 4, 10, 3, 4, 5};

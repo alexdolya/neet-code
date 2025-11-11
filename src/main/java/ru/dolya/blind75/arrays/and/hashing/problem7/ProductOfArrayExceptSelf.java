@@ -2,7 +2,7 @@ package ru.dolya.blind75.arrays.and.hashing.problem7;
 
 import java.util.Arrays;
 
-public class Solution {
+public class ProductOfArrayExceptSelf {
 
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 4, 6};

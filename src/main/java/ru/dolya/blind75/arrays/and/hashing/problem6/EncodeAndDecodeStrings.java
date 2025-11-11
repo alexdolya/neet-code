@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Solution {
+public class EncodeAndDecodeStrings {
 
     public static void main(String[] args) {
         List<String> strings = List.of("neet", "code", "love", "you");

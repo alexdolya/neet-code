@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution {
+public class TopKFrequentElements {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(topKFrequent(new int[]{1, 2, 2, 3, 3, 3}, 2)));

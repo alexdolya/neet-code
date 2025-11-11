@@ -3,7 +3,7 @@ package ru.dolya.blind75.arrays.and.hashing.problem1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution {
+public class ContainsDuplicate {
 
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 3};
