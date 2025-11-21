@@ -1,4 +1,4 @@
-package ru.dolya.blind75.two.pointers;
+package ru.dolya.blind75.two.pointers.problem1;
 
 public class ValidPalindrome {
 
