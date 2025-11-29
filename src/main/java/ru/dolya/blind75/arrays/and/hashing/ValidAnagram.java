@@ -1,4 +1,4 @@
-package ru.dolya.blind75.arrays.and.hashing.problem2;
+package ru.dolya.blind75.arrays.and.hashing;
 
 import java.util.HashMap;
 import java.util.Map;

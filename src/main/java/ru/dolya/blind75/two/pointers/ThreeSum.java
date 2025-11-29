@@ -1,4 +1,4 @@
-package ru.dolya.blind75.two.pointers.problem2;
+package ru.dolya.blind75.two.pointers;
 
 import java.util.*;
 

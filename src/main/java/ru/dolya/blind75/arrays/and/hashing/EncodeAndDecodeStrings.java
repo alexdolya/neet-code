@@ -1,4 +1,4 @@
-package ru.dolya.blind75.arrays.and.hashing.problem6;
+package ru.dolya.blind75.arrays.and.hashing;
 
 import java.util.ArrayList;
 import java.util.Collections;

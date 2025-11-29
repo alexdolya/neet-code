@@ -1,4 +1,4 @@
-package ru.dolya.blind75.two.pointers.problem3;
+package ru.dolya.blind75.two.pointers;
 
 public class ContainerWithMostWater {
 
