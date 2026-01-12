@@ -11,6 +11,12 @@ public class ValidParentheses {
         System.out.println(isValid("([{}])"));
         System.out.println(isValid("[(])"));
         System.out.println(isValid("]"));
+        System.out.println(isValid("])"));
+
+        System.out.println(isValid2("([{}])"));
+        System.out.println(isValid2("[(])"));
+        System.out.println(isValid2("]"));
+        System.out.println(isValid2("])"));
     }
 
     public static boolean isValid(String s) {
@@ -35,6 +41,25 @@ public class ValidParentheses {
                 } else {
                     return false;
                 }
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    public static boolean isValid2(String s) {
+        Deque<Character> stack = new LinkedList<>();
+
+        for (Character c : s.toCharArray()) {
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } else if (c == ')' && !stack.isEmpty() && stack.peek() == '(') {
+                stack.pop();
+            } else if (c == '}' && !stack.isEmpty() && stack.peek() == '{') {
+                stack.pop();
+            } else if (c == ']' && !stack.isEmpty() && stack.peek() == '[') {
+                stack.pop();
+            } else {
+                return false;
             }
         }
         return stack.isEmpty();
