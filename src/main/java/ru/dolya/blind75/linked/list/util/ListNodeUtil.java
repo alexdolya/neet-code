@@ -17,6 +17,9 @@ public class ListNodeUtil {
     }
 
     public static String linkedListToString(ListNode current) {
+        if (current == null) {
+            return "";
+        }
         ListNode next = current.getNext();
         StringBuilder stringBuilder = new StringBuilder();
         while (next != null) {
