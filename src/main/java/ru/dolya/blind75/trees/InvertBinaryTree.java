@@ -1,6 +1,7 @@
 package ru.dolya.blind75.trees;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 import static ru.dolya.blind75.trees.util.TreeNodeUtils.createTree;
@@ -8,9 +9,8 @@ import static ru.dolya.blind75.trees.util.TreeNodeUtils.createTree;
 public class InvertBinaryTree {
 
     public static void main(String[] args) {
-        TreeNode root = createTree(new int[]{1, 2, 3, 4, 5, 6, 7});
-
-        TreeNode inverted = invertTree(root);
+        TreeNode root = createTree(List .of(1, 2, 3, 4, 5, 6, 7));
+        invertTree(root);
     }
 
     public static TreeNode invertTree(TreeNode root) {

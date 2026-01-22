@@ -3,32 +3,40 @@ package ru.dolya.blind75.trees.util;
 import ru.dolya.blind75.trees.TreeNode;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class TreeNodeUtils {
 
-    public static TreeNode createTree(int[] arr) {
-        if (arr == null || arr.length == 0) {
+    public static TreeNode createTree(List<Integer> arr) {
+        if (arr == null || arr.isEmpty()) {
             return null;
         }
 
-        TreeNode root = new TreeNode(arr[0]);
+        TreeNode root = new TreeNode(arr.getFirst());
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
 
         int i = 1;
-        while (!queue.isEmpty() && i < arr.length) {
+        while (!queue.isEmpty() && i < arr.size()) {
             TreeNode current = queue.poll();
 
             // Создаем левого потомка
-            current.left = new TreeNode(arr[i]);
-            queue.offer(current.left);
+            Integer val = arr.get(i);
+            if (val != null) {
+                current.left = new TreeNode(val);
+                queue.offer(current.left);
+
+            }
             i++;
 
             // Создаем правого потомка
-            if (i < arr.length ) {
-                current.right = new TreeNode(arr[i]);
-                queue.offer(current.right);
+            if (i < arr.size() ) {
+                Integer val1 = arr.get(i);
+                if (val != null) {
+                    current.right = new TreeNode(val1);
+                    queue.offer(current.right);
+                }
             }
             i++;
         }
